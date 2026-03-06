@@ -2,16 +2,11 @@ from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from transformers import pipeline
 
-# ----------------------------
-# Load embedding model
-# ----------------------------
+
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
-# ----------------------------
-# Load vector database
-# ----------------------------
 vectorstore = FAISS.load_local(
     "vector_db",
     embeddings,
@@ -20,9 +15,7 @@ vectorstore = FAISS.load_local(
 
 retriever = vectorstore.as_retriever(search_kwargs={"k":3})
 
-# ----------------------------
-# Load better local LLM
-# ----------------------------
+
 generator = pipeline(
     "text-generation",
     model="microsoft/phi-2",
@@ -31,9 +24,6 @@ generator = pipeline(
     do_sample=True
 )
 
-# ----------------------------
-# Ask Question Function
-# ----------------------------
 def ask_question(query):
 
     docs = retriever.invoke(query)
