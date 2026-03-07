@@ -6,6 +6,18 @@ The system loads the Swiggy annual report PDF, converts the text into embeddings
 
 ---
 
+# Dataset / Source
+
+The document used for this project is the **Swiggy Annual Report FY 2023–24**.
+
+Source:
+https://www.swiggy.com/investors
+
+Direct report used in this project:
+Swiggy Annual Report FY 2023–24
+
+This document was used as the knowledge base for the Retrieval-Augmented Generation (RAG) system.
+
 # Features
 
 - PDF document ingestion
