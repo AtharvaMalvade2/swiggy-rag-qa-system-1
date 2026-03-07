@@ -138,6 +138,21 @@ streamlit run app.py
 
 ---
 
+## Example Output
+
+### Question Answering Demo
+
+Below is an example of the system answering a question using the Swiggy Annual Report.
+
+![Colab Output-1](images/ceo_swiggy.png)
+![Colab Output-2](images/services.png)
+
+The system retrieves relevant document chunks from the FAISS vector database and generates an answer using the local language model.
+
+<!-- ### VS Code Application
+
+![VS Code UI](images/vscode_output.png) -->
+
 # Example Queries
 
 ### Question
