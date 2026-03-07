@@ -159,7 +159,7 @@ The system retrieves relevant document chunks from the FAISS vector database and
 Who is the CEO of Swiggy?
 
 ### Answer
-Sriharsha Majety is the Managing Director and Group CEO of Swiggy.
+Sriharsha Majety is the CEO of Swiggy.
 
 ### Supporting Context
 Sriharsha Majety  
@@ -172,7 +172,7 @@ Swiggy Limited
 What services does Swiggy provide?
 
 ### Answer
-Swiggy provides food delivery services, quick commerce, and grocery delivery through Instamart.
+Swiggy offers Food Delivery, Quick Commerce, and Instamart services.
 
 ---
 
